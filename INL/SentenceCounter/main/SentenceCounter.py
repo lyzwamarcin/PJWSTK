@@ -1,1 +1,2 @@
 print "Marcin"
+print "Test"
