@@ -1,9 +1,10 @@
-from main import SentenceCounter
-from main import XMLBuilder
+import SentenceCounter
+import XMLBuilder
 
 __SHORTCUTS_FILE_PATH__ = '..\data\\abbreviations.txt'
 __TEXT_SOURCE_FILE__ = '..\data\\text.txt'
 __OUTPUT_FILE_PATH__ = '..\data\output.xml'
+
 
 class Main:
 
