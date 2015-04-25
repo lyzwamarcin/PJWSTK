@@ -18,3 +18,4 @@ class XMLBuilder:
     def save_to_file(self, file_path):
         tree = ElementTree.ElementTree(self.root)
         tree.write(file_path, encoding='utf-8', xml_declaration=True)
+

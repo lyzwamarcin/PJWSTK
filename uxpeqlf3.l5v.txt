@@ -1,0 +1,52 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   INL/SentenceCounter/data/text.txt
+#	new file:   INL/SentenceCounter/main/Main.py
+#	new file:   INL/SentenceCounter/main/MyTokenizer.py
+#	new file:   INL/SentenceCounter/main/XMLBuilder.py
+#	new file:   TPC/First/.idea/workspace.xml
+#	new file:   TPC/First/target/classes/countries.xsd
+#	new file:   TPC/First/target/classes/endpoint/CountryEndpoint.class
+#	new file:   TPC/First/target/classes/io/spring/guides/gs_producing_web_service/Country.class
+#	new file:   TPC/First/target/classes/io/spring/guides/gs_producing_web_service/Currency.class
+#	new file:   TPC/First/target/classes/io/spring/guides/gs_producing_web_service/GetCountryRequest.class
+#	new file:   TPC/First/target/classes/io/spring/guides/gs_producing_web_service/GetCountryResponse.class
+#	new file:   TPC/First/target/classes/io/spring/guides/gs_producing_web_service/ObjectFactory.class
+#	new file:   TPC/First/target/classes/io/spring/guides/gs_producing_web_service/package-info.class
+#	new file:   TPC/First/target/classes/main/Application.class
+#	new file:   TPC/First/target/classes/model/CountryRepository.class
+#	new file:   TPC/First/target/classes/ws/WebServiceConfig.class
+#	new file:   TPC/First/target/country-service-1.0-SNAPSHOT.jar
+#	new file:   TPC/First/target/country-service-1.0-SNAPSHOT.jar.original
+#	new file:   TPC/First/target/jaxb2/.xjc-xjcStaleFlag
+#	new file:   TPC/First/target/maven-archiver/pom.properties
+#	new file:   TPC/First/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+#	new file:   TPC/First/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+#	new file:   TPC/First/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+#	new file:   TPC/Readme.txt
+#
+# Changes not staged for commit:
+#	deleted:    INL/Readme.txt
+#	modified:   INL/SentenceCounter/.idea/encodings.xml
+#	modified:   INL/SentenceCounter/.idea/workspace.xml
+#	modified:   INL/SentenceCounter/data/shortcuts.txt
+#	modified:   INL/SentenceCounter/data/text.txt
+#	modified:   INL/SentenceCounter/main/Main.py
+#	modified:   INL/SentenceCounter/main/MyTokenizer.py
+#	modified:   INL/SentenceCounter/main/SentenceCounter.py
+#	modified:   INL/SentenceCounter/main/XMLBuilder.py
+#	modified:   INL/SentenceCounter/main/__init__.py
+#
+# Untracked files:
+#	INL/SentenceCounter/.idea/uiDesigner.xml
+#	INL/SentenceCounter/main/MyTokenizer.pyc
+#	INL/SentenceCounter/main/SentenceCounter.pyc
+#	INL/SentenceCounter/main/XMLBuilder.pyc
+#	INL/SentenceCounter/main/__init__.pyc
+#
+
