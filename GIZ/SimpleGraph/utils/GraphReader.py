@@ -4,10 +4,10 @@ import re
 
 
 class GraphReader:
-    def __init__(self, filename=None, stdin=True):
+    def __init__(self, filename=None, stdin=True, graph=None):
         self._filename = filename
         self._stdin = stdin
-        self._graph = None
+        self._graph = graph
         self._vertex_mode = True
 
     def create_graph(self):
@@ -19,7 +19,8 @@ class GraphReader:
         return self._graph
 
     def __build_from_file__(self):
-        self._graph = Graph()
+        if self._graph is None:
+            self._graph = Graph()
         # firstline = True
 
         with open(self._filename) as file:
@@ -42,19 +43,22 @@ class GraphReader:
         values = line.split(' ')
         if self._vertex_mode is True:
             label = values[0].rstrip()
-            #desc = values[1]
             vertex = Vertex(label)
             self._graph.add_vertex(vertex)
         else:
             tail = self._graph.get_vertex_by_label(values[0].rstrip())
             head = self._graph.get_vertex_by_label(values[1].rstrip())
-            label = values[2].rstrip()
+            label = tail, '-', head
             weight = 0
-            if len(values) == 4:
-                weight = int(values[3].rstrip())
+            if len(values) == 3:
+                weight = int(values[2].rstrip())
 
-            edge = Edge(label, tail, head, EdgeDirection.forward, weight)
-            self._graph.add_edge(edge)
+            if self._graph.is_digraph() is True:
+                edge = Edge(label, tail, head, EdgeDirection.forward, weight)
+                self._graph.add_edge(edge)
+            else:
+                edge = Edge(label, tail, head, EdgeDirection.both, weight)
+                self._graph.add_edge(edge)
 
     @staticmethod
     def __parse_first_line__(line):

@@ -2,7 +2,9 @@
   <dictionary name="Marcin">
     <words>
       <w>firstline</w>
+      <w>kruskal</w>
       <w>readline</w>
+      <w>vertice</w>
     </words>
   </dictionary>
 </component>

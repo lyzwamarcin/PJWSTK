@@ -35,10 +35,16 @@ class Graph:
                 edge.get_vertex()[1].add_edge(edge)
 
     def del_vertex(self, vertex):
-        if self._vertices.__contains__(vertex):
-            self._vertices.remove(vertex)
-            for edge in vertex.get_edges():
-                self.del_edge(edge)
+        pass
+        # if self._vertices.__contains__(vertex):
+        #     self._vertices.remove(vertex)
+        #     for edge in vertex.get_edges():
+        #         print 'EDGE: ', edge
+        #         if self._edges.__contains__(edge):
+        #             print 'TO DELETE FROM EDGES: ', edge
+        #             self._edges.remove(edge)
+        #             print 'edge.get_vertex()[0]', edge.get_vertex()[0].get_label()
+        #             # edge.get_vertex()[0].del_edge(edge)
 
     def del_edge(self, edge):
         # if self.is_digraph():
@@ -49,8 +55,8 @@ class Graph:
                             edge.get_direction().reverse())
             if not self._edges.__contains__(edge_tmp):
                 edge.get_vertex()[1].del_edge(edge_tmp)
-        # else:
-        #     pass
+                # else:
+                # pass
 
     def is_digraph(self):
         for edge in self._edges:

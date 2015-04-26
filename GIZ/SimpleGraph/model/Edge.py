@@ -27,7 +27,10 @@ class Edge:
 
     def __str__(self):
         return "Edge " + self._vertex_1.get_label() + " - " + self._vertex_2.get_label() + " is " + str(
-            self._edge_direction)
+            self._edge_direction) + " weight " + str(self._weight)
+
+    def __repr__(self):
+        return self.__str__()
 
     def __eq__(self, other):
         if isinstance(other, self.__class__):
