@@ -1,6 +1,7 @@
 __author__ = 'Marcin'
 from model import *
 
+
 def dijkstra(graph, start):
     import sys
     S = set()

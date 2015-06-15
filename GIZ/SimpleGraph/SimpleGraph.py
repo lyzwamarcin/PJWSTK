@@ -9,26 +9,31 @@ from algorithms import *
 
 
 def main(argv):
-    file_name = './data/dijkstra/d_1.in'
-    opts, args = getopt.getopt(argv, "hi:", ["infile="])
+    file_name = './data/bfs/bfs_1.in'
+    graphviz_file_name = 'g1'
+
+    opts, args = getopt.getopt(argv, "hi:g:", ["infile=", "graphviz="])
     for opt, arg in opts:
         if opt == '-h':
-            print 'SimpleGraph.py -i <inputfile> '
+            print 'SimpleGraph.py -i <inputfile> -g <graphviz_file_name>'
             sys.exit()
         elif opt in ("-i", "--ifile"):
             file_name = arg
-
+        elif opt in ("-g", "--graphviz"):
+            graphviz_file_name = arg
 
     graph = Graph(True)
     reader = GraphReader(file_name, False, graph)
     graph = reader.create_graph()
 
     graph.print_graph()
-    render_graph(graph, preview=True, filename='g1')
+    render_graph(graph, preview=True, filename=graphviz_file_name)
 
-    mst = kruskal(graph)
-    print str(mst)
+    # mst = kruskal(graph)
+    # print str(mst)
 
+    bfs = BFS.bfs(graph, graph.get_vertex_by_label('A'))
+    print bfs
 if __name__ == "__main__":
     main(sys.argv[1:])
 
